@@ -7,6 +7,9 @@ gem 'rails', '4.1.0'
 # E: Adding modes
 gem 'sqlite3', group: [:development, :test]
 
+# Use bootstrap lib for styles
+gem 'bootstrap-sass'
+
 # E: Use postgresqu as the database for production
 group :production do
   gem 'pg'
