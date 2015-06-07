@@ -30,6 +30,10 @@
     </div>
   </nav>
 <div class="container">
+  <!-- 1) iterates through flash msm; 2) create a bootstrap class "alert" with the key of the flash using string interpolation, 3) shows value of that key -->
+  <% flash.each do |key,value| %>
+    <%= content_tag :div, value, class:"alert alert-#{key}" %>
+  <% end %>
   <%= yield %>
 </div>
 
